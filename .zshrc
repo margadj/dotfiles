@@ -1,5 +1,9 @@
 export KEYTIMEOUT=1
 
+autoload -Uz compinit && compinit
+setopt AUTO_MENU
+setopt MENU_COMPLETE
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -26,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Custom bindkeys
 bindkey -v
-bindkey '^I' autosuggest-accept
+# bindkey '^I' autosuggest-accept
 
 # Custom aliases
 alias reload="source ~/.zshrc"
@@ -45,3 +49,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

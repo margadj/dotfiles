@@ -3,6 +3,7 @@ require('lazy').setup({
 
   require 'plugins.tokyonight',
   require 'plugins.gitsigns',
+  require 'plugins.bufferline',
   require 'plugins.which-key',
   require 'plugins.telescope',
   require 'plugins.lspconfig',
@@ -15,7 +16,7 @@ require('lazy').setup({
   require 'plugins.lint',
   require 'plugins.indent_line',
   require 'plugins.autopairs',
-  require 'plugins.neo-tree',
+  require 'plugins.nvim-tree',
   require 'plugins.gitsigns',
 }, {
   ui = {
