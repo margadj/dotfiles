@@ -1,6 +1,6 @@
 require('lazy').setup({
   'tpope/vim-sleuth',
-
+  'christoomey/vim-tmux-navigator',
   require 'plugins.tokyonight',
   require 'plugins.gitsigns',
   require 'plugins.bufferline',
