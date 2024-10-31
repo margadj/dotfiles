@@ -4,6 +4,7 @@ require('lazy').setup({
   require 'plugins.tokyonight',
   require 'plugins.gitsigns',
   require 'plugins.bufferline',
+  require 'plugins.bufferdelete',
   require 'plugins.which-key',
   require 'plugins.telescope',
   require 'plugins.lspconfig',

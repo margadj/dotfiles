@@ -3,6 +3,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.opt.termguicolors = true
+vim.opt.laststatus = 3
 
 -- Make line numbers default
 vim.opt.number = true

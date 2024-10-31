@@ -7,14 +7,20 @@ return {
     },
     keys = {
       { '\\', '<CMD>NvimTreeToggle<CR>', silent = true },
-      { '<C-w>', '<CMD>bd<CR>', silent = true },
+      { '<C-w>', '<CMD>bd!<CR>', silent = true },
     },
     opts = {
       view = {
         width = 30,
+        preserve_window_proportions = true,
       },
       filters = {
         dotfiles = true,
+      },
+      actions = {
+        open_file = {
+          resize_window = true,
+        },
       },
     },
   },
