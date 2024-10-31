@@ -1,10 +1,10 @@
 require('lazy').setup({
   'tpope/vim-sleuth',
   'christoomey/vim-tmux-navigator',
+
   require 'plugins.tokyonight',
   require 'plugins.gitsigns',
   require 'plugins.bufferline',
-  require 'plugins.bufferdelete',
   require 'plugins.which-key',
   require 'plugins.telescope',
   require 'plugins.lspconfig',
@@ -15,7 +15,7 @@ require('lazy').setup({
   require 'plugins.treesitter',
   require 'plugins.debug',
   require 'plugins.lint',
-  require 'plugins.indent_line',
+  require 'plugins.indent-line',
   require 'plugins.autopairs',
   require 'plugins.nvim-tree',
   require 'plugins.gitsigns',

@@ -7,7 +7,6 @@ return {
     },
     keys = {
       { '\\', '<CMD>NvimTreeToggle<CR>', silent = true },
-      { '<C-w>', '<CMD>bd!<CR>', silent = true },
     },
     opts = {
       view = {

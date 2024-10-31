@@ -29,7 +29,16 @@ return {
             },
           },
         },
-        pickers = {},
+        pickers = {
+          find_files = {
+            theme = 'dropdown',
+            hidden = true,
+          },
+          live_grep = {
+            theme = 'dropdown',
+            hidden = true,
+          },
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),

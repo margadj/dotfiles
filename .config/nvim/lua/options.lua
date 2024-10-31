@@ -5,6 +5,8 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 vim.opt.laststatus = 3
 
+vim.opt.shell = '/bin/zsh'
+
 -- Make line numbers default
 vim.opt.number = true
 vim.opt.relativenumber = true
