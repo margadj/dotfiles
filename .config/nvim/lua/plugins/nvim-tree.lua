@@ -6,8 +6,8 @@ return {
       'nvim-tree/nvim-web-devicons',
     },
     keys = {
-      { '\\', ':NvimTreeOpen<CR>', silent = true },
-      { '<C-w>', ':bd<CR>', silent = true },
+      { '\\', '<CMD>NvimTreeToggle<CR>', silent = true },
+      { '<C-w>', '<CMD>bd<CR>', silent = true },
     },
     opts = {
       view = {

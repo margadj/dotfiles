@@ -2,7 +2,10 @@ return {
   {
     'akinsho/bufferline.nvim',
     version = '*',
+    lazy = false,
+    priority = 1000,
     dependencies = 'nvim-tree/nvim-web-devicons',
+    events = 'VimEnter',
     opts = {
       options = {
         offsets = {
@@ -15,6 +18,10 @@ return {
           },
         },
         mode = 'buffers',
+        numbers = 'none',
+        indicator = {
+          style = 'icon',
+        },
         show_buffer_close_icons = false,
         show_close_icon = false,
       },
