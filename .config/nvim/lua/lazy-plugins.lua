@@ -19,6 +19,7 @@ require('lazy').setup({
   require 'plugins.autopairs',
   require 'plugins.nvim-tree',
   require 'plugins.gitsigns',
+  require 'plugins.screenkey',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
