@@ -25,15 +25,14 @@ return {
 
       local starter = require 'mini.starter'
       starter.setup {
-        evaluate_single = true,
-        header = '( ╯°□°)╯ ┻━━┻',
+        header = '(￣^￣)ゞ',
         footer = '',
         items = {
           { name = 'Open File', action = ':Telescope find_files', section = '' },
           { name = 'Search Text', action = ':Telescope live_grep', section = '' },
           { name = 'File Explorer', action = ':enew | NvimTreeOpen', section = '' },
           { name = 'Display Keys', action = ':Screenkey', section = '' },
-          { name = 'Quit Neovim', action = ':qa!', section = '' },
+          { name = 'Quit Vim', action = ':qa!', section = '' },
         },
         content_hooks = {
           starter.gen_hook.adding_bullet '-> ',
