@@ -25,6 +25,7 @@ return {
 
       local starter = require 'mini.starter'
       starter.setup {
+        evaluate_single = true,
         header = '(￣^￣)ゞ',
         footer = '',
         items = {
