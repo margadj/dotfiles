@@ -18,6 +18,7 @@ require('lazy').setup({
   require 'plugins.indent-line',
   require 'plugins.autopairs',
   require 'plugins.nvim-tree',
+  require 'plugins.nvim-notify',
   require 'plugins.gitsigns',
   require 'plugins.screenkey',
 }, {

@@ -6,16 +6,6 @@ return {
     config = function()
       require('mini.ai').setup { n_lines = 500 }
       require('mini.surround').setup()
-      -- require('mini.notify').setup()
-      local notify = require 'mini.notify'
-      notify.setup {
-        window = {
-          config = {
-            height = 1,
-            border = 'rounded',
-          },
-        },
-      }
 
       require('mini.bufremove').setup()
       vim.keymap.set('n', '<C-w>', function()
@@ -29,8 +19,8 @@ return {
         header = '(￣^￣)ゞ',
         footer = '',
         items = {
-          { name = 'Open File', action = ':Telescope find_files', section = '' },
-          { name = 'Search Text', action = ':Telescope live_grep', section = '' },
+          { name = 'Open File', action = ':Telescope find_files theme=dropdown previewer=false hidden=true', section = '' },
+          { name = 'Search Text', action = ':Telescope live_grep theme=dropdown previewer=false hidden=true', section = '' },
           { name = 'File Explorer', action = ':enew | NvimTreeOpen', section = '' },
           { name = 'Display Keys', action = ':Screenkey', section = '' },
           { name = 'Quit Vim', action = ':qa!', section = '' },
