@@ -3,8 +3,9 @@ require('lazy').setup({
   'christoomey/vim-tmux-navigator',
 
   require 'plugins.tokyonight',
-  require 'plugins.gitsigns',
+  require 'plugins.nvim-tree',
   require 'plugins.bufferline',
+  require 'plugins.gitsigns',
   require 'plugins.which-key',
   require 'plugins.telescope',
   require 'plugins.lspconfig',
@@ -17,7 +18,6 @@ require('lazy').setup({
   require 'plugins.lint',
   require 'plugins.indent-line',
   require 'plugins.autopairs',
-  require 'plugins.nvim-tree',
   require 'plugins.nvim-notify',
   require 'plugins.gitsigns',
   require 'plugins.screenkey',

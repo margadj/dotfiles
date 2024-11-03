@@ -16,7 +16,7 @@ return {
       local starter = require 'mini.starter'
       starter.setup {
         evaluate_single = true,
-        header = '(￣^￣)ゞ',
+        header = '(╮°-°)╮┳━━┳',
         footer = '',
         items = {
           { name = 'Open File', action = ':Telescope find_files theme=dropdown previewer=false hidden=true', section = '' },

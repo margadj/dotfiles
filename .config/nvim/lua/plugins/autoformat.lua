@@ -38,6 +38,8 @@ return {
         lua = { 'stylua' },
         python = { 'isort', 'black' },
         go = { 'gofmt' },
+        css = { 'prettierd' },
+        json = { 'prettierd' },
         javascript = { 'prettierd', 'eslint_d' },
         typescript = { 'prettierd', 'eslint_d' },
       },
