@@ -3,13 +3,6 @@ vim.api.nvim_create_autocmd('VimLeave', {
   command = 'set guicursor=a:ver25',
 })
 
--- Automatically save a buffer when out of focus
-vim.api.nvim_create_autocmd('FocusLost', {
-  pattern = '*',
-  command = 'silent! wa',
-})
-
--- Maintain cursor position
 vim.api.nvim_create_autocmd('BufReadPost', {
   group = vim.api.nvim_create_augroup('bufcheck', { clear = true }),
   pattern = '*',
