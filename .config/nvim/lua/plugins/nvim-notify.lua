@@ -26,8 +26,5 @@ return {
 
       vim.notify = notify
     end,
-    keys = {
-      { '<leader>fn', '<cmd>Telescope notify<cr>', desc = 'Find Notifications' },
-    },
   },
 }

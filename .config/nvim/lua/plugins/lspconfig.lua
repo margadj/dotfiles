@@ -148,6 +148,7 @@ return {
         emmet_ls = {
           filetypes = {
             'html',
+            'astro',
             'typescript',
             'javascript',
             'typescriptreact',

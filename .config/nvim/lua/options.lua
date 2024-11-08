@@ -16,13 +16,15 @@ vim.opt.mouse = 'v'
 vim.opt.showmode = false
 
 vim.opt.wrap = false
+
 -- Sync clipboard between OS and Neovim.
-vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
-end)
 
 -- Enable break indent
 vim.opt.breakindent = true
+
+vim.opt.expandtab = true
+
 
 -- Save undo history
 vim.opt.undofile = true
