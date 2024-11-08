@@ -7,7 +7,7 @@ return {
       {
         '<leader>f',
         function()
-          require('conform').format { async = true, lsp_format = 'fallback' }
+          require('conform').format { timeout_ms = 3000, async = false, quiet = false, lsp_format = 'fallback' }
         end,
         mode = '',
         desc = '[F]ormat buffer',
@@ -15,6 +15,7 @@ return {
     },
     opts = {
       notify_on_error = true,
+
       format_on_save = function(bufnr)
         -- Disable "format_on_save lsp_fallback" for languages that don't
         -- have a well standardized coding style. You can add additional
@@ -43,6 +44,17 @@ return {
         typescript = { 'prettierd', 'prettier' },
         javascriptreact = { 'prettierd', 'prettier' },
         typescriptreact = { 'prettierd', 'prettier' },
+      },
+
+      formatters = {
+        prettier = {
+          options = {
+            semi = false,
+            singleQuote = true,
+            trailingComma = 'none',
+            tabWidth = 2,
+          },
+        },
       },
     },
   },
