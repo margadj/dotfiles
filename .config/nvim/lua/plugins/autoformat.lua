@@ -48,11 +48,13 @@ return {
 
       formatters = {
         prettier = {
-          options = {
-            semi = false,
-            singleQuote = true,
-            trailingComma = 'none',
-            tabWidth = 2,
+          prepend_args = {
+            '--no-semi',
+            '--single-quote',
+            '--trailing-comma',
+            'none',
+            '--tab-width',
+            '2',
           },
         },
       },
