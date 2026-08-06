@@ -12,3 +12,16 @@
 .config/*
 !.config/nvim/
 !.config/nvim/**
+
+# Claude Code: config only. Never transcripts (projects/), prompt history,
+# installed plugins, or machine-local caches.
+!.claude/
+.claude/*
+!.claude/CLAUDE.md
+!.claude/settings.json
+!.claude/statusline-command.sh
+!.claude/keybindings.json
+!.claude/skills/
+!.claude/skills/**
+!.claude/hooks/
+!.claude/hooks/claude-island-state.py

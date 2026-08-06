@@ -1,0 +1,235 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/opt/homebrew/bin/tmux capture-pane *)",
+      "Bash(/opt/homebrew/bin/tmux list-windows *)",
+      "Bash(/opt/homebrew/bin/tmux list-panes *)",
+      "Bash(/opt/homebrew/bin/tmux list-sessions *)",
+      "Bash(/opt/homebrew/bin/tmux display-message *)",
+      "Bash(/opt/homebrew/bin/tmux show *)"
+    ],
+    "defaultMode": "auto"
+  },
+  "model": "opus",
+  "skillOverrides": {
+    "superpowers:dispatching-parallel-agents": "off",
+    "superpowers:finishing-a-development-branch": "off",
+    "superpowers:receiving-code-review": "off",
+    "superpowers:requesting-code-review": "off",
+    "superpowers:systematic-debugging": "off",
+    "superpowers:using-git-worktrees": "off",
+    "superpowers:writing-skills": "off"
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "PermissionDenied": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'",
+            "timeout": 86400
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "matcher": "auto",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      },
+      {
+        "matcher": "manual",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "auto",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      },
+      {
+        "matcher": "manual",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 '/Users/margad_j/.claude/hooks/claude-island-state.py'"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "sh /Users/margad_j/.claude/statusline-command.sh",
+    "padding": 0
+  },
+  "enabledPlugins": {
+    "caveman@caveman": true,
+    "chrome-devtools-mcp@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "awaySummaryEnabled": false,
+  "theme": "dark-ansi",
+  "editorMode": "normal",
+  "terminalProgressBarEnabled": false,
+  "remoteControlAtStartup": true,
+  "agentPushNotifEnabled": false,
+  "skipAutoPermissionPrompt": true
+}
