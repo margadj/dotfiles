@@ -1,0 +1,14 @@
+# Bare dotfiles repo: work tree is $HOME, so ignore everything by default
+# and whitelist only what is tracked. Add a new dotfile with:
+#   config add -f <path>     (then whitelist it below)
+*
+
+!.gitignore
+!README.md
+!.zshrc
+!.tmux.conf
+
+!.config/
+.config/*
+!.config/nvim/
+!.config/nvim/**
