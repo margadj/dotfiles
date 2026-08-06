@@ -3,6 +3,7 @@ vim.api.nvim_create_autocmd('VimLeave', {
   command = 'set guicursor=a:ver25',
 })
 
+-- Remember position on vim file
 vim.api.nvim_create_autocmd('BufReadPost', {
   group = vim.api.nvim_create_augroup('bufcheck', { clear = true }),
   pattern = '*',

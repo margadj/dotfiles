@@ -50,7 +50,7 @@ return {
         prettier = {
           prepend_args = {
             '--no-semi',
-            '--single-quote',
+            '--double-quote',
             '--trailing-comma',
             'none',
             '--tab-width',
