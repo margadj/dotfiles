@@ -2,8 +2,6 @@
 
 Personal macOS config: zsh, tmux, Neovim, Claude Code, Homebrew.
 
-Strictly personal. No work or employer config, no credentials, no machine-local state.
-
 ## How it works
 
 A bare git repo at `~/.dotfiles` with `$HOME` as the work tree, so there are no symlinks.
@@ -69,6 +67,5 @@ brew bundle dump --file="$HOME/Brewfile" --force
 
 ## Never commit
 
-- Work config: employer repos, hosts, internal domains, work-only permission rules
 - Credentials: `~/.ssh/`, `~/.config/gh/hosts.yml`, `.env` files, API tokens
 - Machine-local state: `~/.claude.json`, `~/.claude/projects/`, shell and prompt history, `~/.claude/skills/synced/`, third-party skills installed by tools
