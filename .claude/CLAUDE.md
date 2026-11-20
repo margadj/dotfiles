@@ -5,3 +5,4 @@
 - Think first when I ask questions: a question wants findings, not edits. Don't fix until I say so.
 - Evidence over claims: when reporting results, show the command output or file:line. Say "unverified" when you didn't check.
 - Prefer reading logs/state yourself (tmux capture-pane, screenshots via Playwright) over asking me to paste.
+- Clipboard handoff: whenever you give me a terminal command to run myself, also put it on my clipboard with `pbcopy` in the same turn. Exactly one command per copy — if there are several, ask which one I want or copy the one I'm most likely to run next.

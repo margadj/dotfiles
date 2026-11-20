@@ -17,6 +17,7 @@ bold="\033[1m"
 
 # ── data
 model=$(echo "$input" | jq -r '.model.display_name // empty')
+effort=$(echo "$input" | jq -r '.effort.level // empty')
 used=$(echo "$input" | jq -r '.context_window.used_percentage // empty')
 five=$(echo "$input" | jq -r '.rate_limits.five_hour.used_percentage // empty')
 week=$(echo "$input" | jq -r '.rate_limits.seven_day.used_percentage // empty')
@@ -24,6 +25,11 @@ week=$(echo "$input" | jq -r '.rate_limits.seven_day.used_percentage // empty')
 # ── model segment — periwinkle bold text, terminal default bg
 if [ -n "$model" ]; then
   printf "${fg_periwinkle}${bold} %s ${reset}" "$model"
+fi
+
+# ── effort segment — periwinkle bold, right after the model
+if [ -n "$effort" ]; then
+  printf "${fg_periwinkle}${bold}%s ${reset}" "$effort"
 fi
 
 # ── context segment — color ramp as text color, bold

@@ -18,7 +18,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # ZSH plugins
-plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git tmux)
 source $ZSH/oh-my-zsh.sh
 
 # custom configs
@@ -38,7 +38,7 @@ alias vim='nvim'
 alias td='tmux detach'
 alias config="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias ag="antigravity"
-alias vibe="CLAUDE_CODE_NO_FLICKER=1 claude"
+alias claude="CLAUDE_CODE_NO_FLICKER=1 claude --chrome"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -71,3 +71,10 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/plat
 # Added by Antigravity
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# syntax-highlighting must be sourced last
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/margad_j/.local/bin:$PATH"
