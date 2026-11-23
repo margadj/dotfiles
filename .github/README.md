@@ -19,7 +19,7 @@ alias config='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 | `.tmux.conf` | TPM plugins, Tokyo Night theme, vim-tmux-navigator, resurrect + continuum |
 | `.config/nvim/` | Neovim config on lazy.nvim, plugins pinned in `lazy-lock.json` |
 | `.claude/` | Claude Code: `CLAUDE.md`, `settings.json`, keybindings, statusline, hook, own skills |
-| `Brewfile` | Homebrew formulae, casks, VS Code extensions, Go / npm globals |
+| `.homebrew/Brewfile` | Homebrew formulae, casks, VS Code extensions, Go / npm globals |
 
 ## New machine
 
@@ -34,7 +34,7 @@ alias config='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 config checkout   # if it refuses, move the conflicting files aside and rerun
 
 # 3. Packages
-brew bundle --file="$HOME/Brewfile"
+brew bundle --global
 
 # 4. oh-my-zsh + powerlevel10k (keeps the checked-out .zshrc)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
@@ -62,7 +62,7 @@ For a file inside a directory, the directory must be whitelisted too. See the `.
 To refresh the Brewfile after installing or removing packages:
 
 ```sh
-brew bundle dump --file="$HOME/Brewfile" --force
+brew bundle dump --global --force
 ```
 
 ## Never commit

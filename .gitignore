@@ -4,10 +4,18 @@
 *
 
 !.gitignore
-!README.md
 !.zshrc
 !.tmux.conf
-!Brewfile
+
+# README lives in .github/ so it stays out of $HOME (GitHub still renders it)
+!.github/
+.github/*
+!.github/README.md
+
+# Brewfile where `brew bundle --global` reads it
+!.homebrew/
+.homebrew/*
+!.homebrew/Brewfile
 
 !.config/
 .config/*
